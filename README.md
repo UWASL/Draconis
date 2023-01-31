@@ -24,3 +24,14 @@ After installing the requirements specified above, the steps to deploy Draconis 
         ./run_bfshell.sh -f controller.txt
 
 The controller may need to be modified to match the switch ports, MAC addresses and IP addresses of the target cluster
+
+### DPDK Deployment
+
+This section applies to the deployment of the DPDK Backend, Client as well as Draconis-DPDK-Server. The Makefile provided within Draconis_DPDK/ has sample commands to build each of these applications. After copying over the folder to the target machine, modify the Makefile to uncomment the relevane lines and then run the following commands:
+
+        export $RTE_SDK=$PATH_TO_DPDK_18
+        sudo -E make
+
+This should build the relevant Draconis binary (depending on the Makefile modifications) within Draconis_DPDK/build/
+
+
