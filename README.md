@@ -35,13 +35,32 @@ This should build the relevant Draconis binary (depending on the Makefile modifi
 ### Running Draconis
 
 On the switch, use the following commands:
+
         ./run_switchd.sh -p p4scheduler &
         ./run_bfshell.sh -f controller.txt
 
 To run the Draconis backend worker on any machine, use the following command:
+
         sudo ./DraconisBackend.o <time_to_run_in_sec> -l <cores>
         Example: sudo ./DraconisBackend.o 100 -l 1-16
+        
+To run the Draconis-DPDK-Server on any machine:
+        
+        sudo ./DraconisDPDKServer.o
+        
+Note that it is advised to run Draconis-DPDK-Server on all available cores for maximum performance.
 
+Finally, to run the Draconis client,
+
+      sudo ./DraconisClient.o <workload_file> <time_to_Wait_after_submissions_sec> <result_prefix>
+      Example: sudo ./DraconisClient.o Exp_Mean_250us 30 Exponential_Workload_Results
+
+#### Workload File
+The workload file is in CSV format and has the following structure on each line:
+  
+      Job_ID,Job_Arrival_Time_Us,Task_Runtime_Us,Num_Tasks
+
+Job ID has to be an integer for now and the times are in microseconds.
 
 
 
