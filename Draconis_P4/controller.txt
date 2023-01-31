@@ -1,0 +1,195 @@
+
+ucli
+pm
+port-add 1/- 100G RS
+port-add 2/- 100G RS
+port-add 3/- 100G RS
+port-add 4/- 100G RS
+
+port-add 5/- 100G RS
+port-add 6/- 100G RS
+port-add 7/- 100G RS
+port-add 8/- 100G RS
+
+port-add 9/- 100G RS
+port-add 10/- 100G RS
+port-add 11/- 100G RS
+port-add 12/- 100G RS
+
+port-add 13/- 100G RS
+port-add 14/- 100G RS
+port-add 15/- 100G RS
+port-add 16/- 100G RS
+
+port-add 17/- 100G RS
+port-add 18/- 100G RS
+port-add 19/- 100G RS
+port-add 20/- 100G RS
+
+port-add 21/- 100G RS
+port-add 22/- 100G RS
+port-add 23/- 100G RS
+port-add 24/- 100G RS
+
+port-add 25/- 100G RS
+port-add 26/- 100G RS
+port-add 27/- 100G RS
+port-add 28/- 100G RS
+
+port-add 29/- 100G RS
+port-add 30/- 100G RS
+port-add 31/- 100G RS
+port-add 32/- 100G RS
+
+port-enb 1/-
+port-enb 2/-
+port-enb 3/-
+port-enb 4/-
+
+port-enb 5/-
+port-enb 6/
+port-enb 7/-
+port-enb 8/-
+
+port-enb 9/-
+port-enb 10/-
+port-enb 11/-
+port-enb 12/-
+
+port-enb 13/-
+port-enb 14/-
+port-enb 15/-
+port-enb 16/-
+
+port-enb 17/-
+port-enb 18/-
+port-enb 19/-
+port-enb 20/-
+
+port-enb 21/-
+port-enb 22/-
+port-enb 23/-
+port-enb 24/-
+
+port-enb 25/-
+port-enb 26/-
+port-enb 27/-
+port-enb 28/-
+
+port-enb 29/-
+port-enb 30/-
+port-enb 31/-
+port-enb 32/-
+
+
+exit
+
+pd
+
+pd table_set_dst_mac_address add_entry action_set_dst_mac_address eg_intr_md_egress_port 60 action_dst_mac_address 0x98039b7fc5cc
+pd table_set_dst_mac_address add_entry action_set_dst_mac_address eg_intr_md_egress_port 52 action_dst_mac_address 0x98039b7fbdc0
+pd table_set_dst_mac_address add_entry action_set_dst_mac_address eg_intr_md_egress_port 44 action_dst_mac_address 0x98039b7fbdb0
+pd table_set_dst_mac_address add_entry action_set_dst_mac_address eg_intr_md_egress_port 36 action_dst_mac_address 0x98039b7fc730
+pd table_set_dst_mac_address add_entry action_set_dst_mac_address eg_intr_md_egress_port 28 action_dst_mac_address 0x98039b7fbdc4
+pd table_set_dst_mac_address add_entry action_set_dst_mac_address eg_intr_md_egress_port 20 action_dst_mac_address 0x98039b7fbdcc
+pd table_set_dst_mac_address add_entry action_set_dst_mac_address eg_intr_md_egress_port 12 action_dst_mac_address 0x98039b7fbdd4
+pd table_set_dst_mac_address add_entry action_set_dst_mac_address eg_intr_md_egress_port 4 action_dst_mac_address 0x98039b7fbdc8
+pd table_set_dst_mac_address add_entry action_set_dst_mac_address eg_intr_md_egress_port 0 action_dst_mac_address 0x98039b7fba38
+pd table_set_dst_mac_address add_entry action_set_dst_mac_address eg_intr_md_egress_port 8 action_dst_mac_address 0x98039b7fbdb4
+pd table_set_dst_mac_address add_entry action_set_dst_mac_address eg_intr_md_egress_port 16 action_dst_mac_address 0x98039b7fbddc
+pd table_set_dst_mac_address add_entry action_set_dst_mac_address eg_intr_md_egress_port 24 action_dst_mac_address 0x98039b7fc08c
+pd table_set_dst_mac_address add_entry action_set_dst_mac_address eg_intr_md_egress_port 32 action_dst_mac_address 0x98039b7fbdd8
+pd table_set_dst_mac_address add_entry action_set_dst_mac_address eg_intr_md_egress_port 56 action_dst_mac_address 0x98039b7fbdd0
+
+pd table_layer_3_switching add_entry action_layer_3_switching ipv4_dstAddr 192.168.126.101 action_port 60
+pd table_layer_3_switching add_entry action_layer_3_switching ipv4_dstAddr 192.168.126.102 action_port 52
+pd table_layer_3_switching add_entry action_layer_3_switching ipv4_dstAddr 192.168.126.103 action_port 44
+pd table_layer_3_switching add_entry action_layer_3_switching ipv4_dstAddr 192.168.126.104 action_port 36
+pd table_layer_3_switching add_entry action_layer_3_switching ipv4_dstAddr 192.168.126.105 action_port 28
+pd table_layer_3_switching add_entry action_layer_3_switching ipv4_dstAddr 192.168.126.106 action_port 20
+pd table_layer_3_switching add_entry action_layer_3_switching ipv4_dstAddr 192.168.126.107 action_port 12
+pd table_layer_3_switching add_entry action_layer_3_switching ipv4_dstAddr 192.168.126.108 action_port 4
+pd table_layer_3_switching add_entry action_layer_3_switching ipv4_dstAddr 192.168.126.109 action_port 0
+pd table_layer_3_switching add_entry action_layer_3_switching ipv4_dstAddr 192.168.126.110 action_port 8
+pd table_layer_3_switching add_entry action_layer_3_switching ipv4_dstAddr 192.168.126.111 action_port 16
+pd table_layer_3_switching add_entry action_layer_3_switching ipv4_dstAddr 192.168.126.112 action_port 24
+pd table_layer_3_switching add_entry action_layer_3_switching ipv4_dstAddr 192.168.126.113 action_port 32
+pd table_layer_3_switching add_entry action_layer_3_switching ipv4_dstAddr 192.168.126.1 action_port 56
+
+pd table_set_registers_behavior add_entry action_retrieve_task p4_scheduler_operation_code 1
+pd table_set_registers_behavior add_entry action_submit_job p4_scheduler_operation_code 2
+pd table_set_registers_behavior add_entry action_fix_c p4_scheduler_operation_code 3
+pd table_set_registers_behavior add_entry action_fix_p p4_scheduler_operation_code 4
+pd table_set_registers_behavior add_entry action_finished_task p4_scheduler_operation_code 5
+
+pd table_set_registers_write_data add_entry action_retrieve_task_write_data p4_scheduler_operation_code 1
+pd table_set_registers_write_data add_entry action_submit_job_write_data p4_scheduler_operation_code 2
+pd table_set_registers_write_data add_entry action_fix_c_write_data p4_scheduler_operation_code 3
+pd table_set_registers_write_data add_entry action_fix_p_write_data p4_scheduler_operation_code 4
+pd table_set_registers_write_data add_entry action_finished_task_write_data p4_scheduler_operation_code 5
+
+pd table_fill_index_array add_entry action_fill_index_array_consume p4_scheduler_operation_code 1
+pd table_fill_index_array set_default_action action_fill_index_array_not_consume
+
+
+pd register_write_all register_functions_ids register_value -1
+pd register_write_all register_functions_parameters register_value -1
+pd register_write_all register_tasks_ids register_value -1
+pd register_write_all register_users_ips register_value -1
+pd register_write_all register_users_ports register_value -1
+
+pd table_decide_should_fix_c_and_p add_entry action_set_should_fix_c p4_scheduler_operation_code 2 my_metadata_p_minus_c 2147483648 my_metadata_queue_size_minus_p_minus_c 0
+pd table_decide_should_fix_c_and_p add_entry action_set_should_fix_p p4_scheduler_operation_code 2 my_metadata_p_minus_c 0 my_metadata_queue_size_minus_p_minus_c 2147483648
+
+pd table_check_if_fix_recirculate_needed add_entry action_recirculate_to_fix_c p4_scheduler_operation_code 2 my_metadata_should_fix_c 1 my_metadata_should_fix_p 0 my_metadata_read_destination_fix_c 0 my_metadata_read_destination_fix_p 0
+pd table_check_if_fix_recirculate_needed add_entry action_recirculate_to_fix_c p4_scheduler_operation_code 2 my_metadata_should_fix_c 1 my_metadata_should_fix_p 0 my_metadata_read_destination_fix_c 0 my_metadata_read_destination_fix_p 1
+
+pd table_check_if_fix_recirculate_needed add_entry action_recirculate_to_fix_p p4_scheduler_operation_code 2 my_metadata_should_fix_c 0 my_metadata_should_fix_p 1 my_metadata_read_destination_fix_c 0 my_metadata_read_destination_fix_p 0
+pd table_check_if_fix_recirculate_needed add_entry action_recirculate_to_fix_p p4_scheduler_operation_code 2 my_metadata_should_fix_c 0 my_metadata_should_fix_p 1 my_metadata_read_destination_fix_c 1 my_metadata_read_destination_fix_p 0
+
+pd table_submit_next_task add_entry discard p4_scheduler_submit_job_number_of_tasks 0
+
+pd table_read_and_write_and_inc_register_register_produce_index add_entry action_read_register_register_produce_index my_metadata_operation_produce_index 0
+pd table_read_and_write_and_inc_register_register_produce_index add_entry action_read_then_write_register_register_produce_index my_metadata_operation_produce_index 1
+pd table_read_and_write_and_inc_register_register_produce_index add_entry action_read_then_inc_register_register_produce_index my_metadata_operation_produce_index 2
+
+pd table_read_and_write_and_inc_register_register_consume_index add_entry action_read_register_register_consume_index my_metadata_operation_consume_index 0
+pd table_read_and_write_and_inc_register_register_consume_index add_entry action_read_then_write_register_register_consume_index my_metadata_operation_consume_index 1
+pd table_read_and_write_and_inc_register_register_consume_index add_entry action_read_then_inc_register_register_consume_index my_metadata_operation_consume_index 2
+
+
+pd table_read_and_write_register_register_fix_c add_entry action_read_register_register_fix_c my_metadata_will_write_field_fix_c 0
+pd table_read_and_write_register_register_fix_c add_entry action_read_then_write_register_register_fix_c my_metadata_will_write_field_fix_c 1
+
+pd table_read_and_write_register_register_fix_p add_entry action_read_register_register_fix_p my_metadata_will_write_field_fix_p 0
+pd table_read_and_write_register_register_fix_p add_entry action_read_then_write_register_register_fix_p my_metadata_will_write_field_fix_p 1
+
+
+pd table_read_and_write_register_register_functions_ids add_entry action_read_register_register_functions_ids my_metadata_will_write_field_functions_ids 0
+pd table_read_and_write_register_register_functions_ids add_entry action_read_then_write_register_register_functions_ids my_metadata_will_write_field_functions_ids 1
+
+pd table_read_and_write_register_register_functions_parameters add_entry action_read_register_register_functions_parameters my_metadata_will_write_field_functions_parameters 0
+pd table_read_and_write_register_register_functions_parameters add_entry action_read_then_write_register_register_functions_parameters my_metadata_will_write_field_functions_parameters 1
+
+pd table_read_and_write_register_register_tasks_ids add_entry action_read_register_register_tasks_ids my_metadata_will_write_field_tasks_ids 0
+pd table_read_and_write_register_register_tasks_ids add_entry action_read_then_write_register_register_tasks_ids my_metadata_will_write_field_tasks_ids 1
+
+pd table_read_and_write_register_register_users_ips add_entry action_read_register_register_users_ips my_metadata_will_write_field_users_ips 0
+pd table_read_and_write_register_register_users_ips add_entry action_read_then_write_register_register_users_ips my_metadata_will_write_field_users_ips 1
+
+pd table_read_and_write_register_register_users_ports add_entry action_read_register_register_users_ports my_metadata_will_write_field_users_ports 0
+pd table_read_and_write_register_register_users_ports add_entry action_read_then_write_register_register_users_ports my_metadata_will_write_field_users_ports 1
+
+
+pd table_read_and_write_register_register_users_ids add_entry action_read_register_register_users_ids my_metadata_will_write_field_users_ids 0
+pd table_read_and_write_register_register_users_ids add_entry action_read_then_write_register_register_users_ids my_metadata_will_write_field_users_ids 1
+
+
+pd table_read_and_write_register_register_jobs_ids add_entry action_read_register_register_jobs_ids my_metadata_will_write_field_jobs_ids 0
+pd table_read_and_write_register_register_jobs_ids add_entry action_read_then_write_register_register_jobs_ids my_metadata_will_write_field_jobs_ids 1
+
+
+pd table_read_and_write_register_register_beggining_scheduling_time_1 add_entry action_read_register_register_beggining_scheduling_time_1 my_metadata_will_write_field_beggining_scheduling_time_1 0
+pd table_read_and_write_register_register_beggining_scheduling_time_1 add_entry action_read_then_write_register_register_beggining_scheduling_time_1 my_metadata_will_write_field_beggining_scheduling_time_1 1
+
+exit
