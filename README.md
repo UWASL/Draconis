@@ -17,7 +17,7 @@ Our Barefoot Tofino switch controller had the following configuration:
 
 After installing the requirements specified above, the steps to deploy Draconis are as follows:
 
-###Switch Code Deployment
+### Switch Code Deployment
         cd $BF_SDE_DIR
         p4_build.sh --no_graphs p4scheduler.p4
         ./run_switchd.sh -p p4scheduler &
