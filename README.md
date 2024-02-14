@@ -5,7 +5,7 @@ This repository contains both the P4 code for Draconis as well as the supporting
 Please cite our paper from EuroSys 2024 if you're using the code from this repository:
 
 ```
-[1] Sreeharsha Udayashankar, Ashraf Abdel-Hadi, Ali Mashtizadeh, and Samer Al-Kiswany. 2024. Draconis: Network-Accelerated Scheduling for Micro-Scale Workloads. European Conference on Computer Systems (EuroSys).
+[1] Sreeharsha Udayashankar, Ashraf Abdel-Hadi, Ali Mashtizadeh, and Samer Al-Kiswany. 2024. Draconis: Network-Accelerated Scheduling for Micro-Scale Workloads. In Proceedings of The European Conference on Computer Systems (EuroSys ’24).
 ```
 
 # System Properties and Requirements
