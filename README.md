@@ -2,7 +2,7 @@
 
 This repository contains both the P4 code for Draconis as well as the supporting DPDK code. The P4 code provided uses a FCFS scheduling policy.
 
-Please cite our paper from EuroSys 2024 using the following citation if you're using the code from this repository:
+Please cite our paper from EuroSys 2024 if you're using the code from this repository:
 
 ```
 [1] Sreeharsha Udayashankar, Ashraf Abdel-Hadi, Ali Mashtizadeh, and Samer Al-Kiswany. 2024. Draconis: Network-Accelerated Scheduling for Micro-Scale Workloads. European Conference on Computer Systems (EuroSys).
