@@ -1,6 +1,6 @@
 # Draconis
 
-This repository contains both the P4 code for Draconis as well as the supporting DPDK code. The P4 code provided uses a FCFS scheduling policy.
+This repository contains both the P4 code for Draconis as well as the supporting DPDK code. The P4 code provided supports the FCFS scheduling policy.
 
 Please cite our paper from EuroSys 2024 if you're using the code from this repository:
 
