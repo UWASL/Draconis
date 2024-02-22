@@ -87,5 +87,9 @@ The workload file is in CSV format and has the following structure on each line:
 
 Job ID has to be an integer for now and the times are in microseconds.
 
-
+# DOI
+The DOI for this code repository is:
+```
+10.5281/zenodo.10688914
+```
 
